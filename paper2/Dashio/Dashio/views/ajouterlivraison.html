@@ -1,0 +1,80 @@
+<HTML>
+<head>
+</head>
+<body>
+<form method="POST" action="ajoutlivraison.php">
+<table>
+<caption>Ajouter livraison</caption>
+<tr>
+<td>numero de commande </td>
+<td><input name="numcom" type="number" required pattern="[0-9]" x-moz-errormessage=" des chiffres" placeholder="numcom"></td>
+</tr>
+<tr>
+<td>Nom </td>
+<td><input type="text" name="nomclient" required pattern="[a-zA-Z-\.]{3,12}" placeholder="nom du client"></td>
+</tr>
+<tr>
+<td>Prenom </td>
+<td><input type="text" name="prenomc" required pattern="[a-zA-Z-\.]{3,12}" placeholder="prenom du client"></td>
+</tr>
+<tr>
+<td>numero de telephone </td>
+<td><input name="numclient" type="number" required pattern="[0-9]" x-moz-errormessage="+216" placeholder="numclient"></td>
+</tr>
+<tr>
+<td>Numero d'adresse</td>
+<td><input name="numadress" type="number" required pattern="[0-9]" x-moz-errormessage="numero rue" placeholder="numadress"></td>
+</tr>
+<tr>
+<td>Nom de rue </td>
+<td><input type="text" name="nomrue" required pattern="[a-zA-Z-\.]{3,12}" placeholder="nom de la rue"></td>
+</tr>
+<tr>
+<td>Nom de la ville </td>
+<td><input type="text" name="nomville" required pattern="[a-zA-Z-\.]{3,12}" placeholder="nom de ville"></td>
+</tr>
+<tr>
+<td>Nom de gouvernorat </td>
+<td><input type="text" name="nomgouv" required pattern="[a-zA-Z-\.]{3,12}" placeholder="nom de gouv"></td>
+</tr>
+<tr>
+<td>prix livraison</td>
+<td><input name="prixlivraison" type="number" required pattern="[0-9]" x-moz-errormessage="chiffres" placeholder="prixlivraison"></td>
+</tr>
+<tr>
+<td>prix de commande</td>
+<td><input name="prixcomm" type="number" required pattern="[0-9]" x-moz-errormessage="prix" placeholder="prix"></td>
+</tr>
+<tr>
+<td>prix total</td>
+<td><input name="prixtotal" type="number" required pattern="[0-9]" x-moz-errormessage="prix" placeholder="prix"></td>
+</tr>
+<tr>
+<td>cin du livreur</td>
+<td><input name="cinlivreur" type="number" required pattern="[0-9]" x-moz-errormessage="cin" placeholder="cin"></td>
+</tr>
+
+
+
+<div>
+     <p>
+       <label ><data>date de livraison</data></label><br />
+       <select name="datelivraison" id="datelivraison">
+            <option value="1">lundi</option>
+                    <option value="2">mardi</option>
+                    <option value="3">mercredi</option>
+                    <option value="4">jeudi</option>
+                    <option value="5">vendredi</option>
+                    <option value="6">samedi</option>
+                    <option value="7">dimanche</option>
+       </select>
+   </p>
+    </div>
+    
+<td></td>
+<td><input type="submit" name="ajouter" value="ajouter"></td>
+</tr>
+</table>
+</form>
+</body>
+</HTMl>
