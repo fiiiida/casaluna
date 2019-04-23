@@ -1,0 +1,60 @@
+<HTML>
+<head>
+</head>
+<body>
+<form method="POST" action="ajouter.php">
+<table>
+<caption>Ajouter Client</caption>
+<tr>
+<td>Identifiant</td>
+<td><input type="number" name="identifiant" id="identifiant"></td>
+</tr>
+<tr>
+<td>Nom</td>
+<td><input type="text" name="nom" id="nom" onkeypress="verifierCaracteres(event); return false;"></td>
+</tr>
+<tr>
+<td>Prenom</td>
+<td><input type="text" name="prenom" id="prenom" onkeypress="verifierCaractereslastname(event); return false;"></td>
+</tr>
+<tr>
+<td>Age</td>
+<td><input type="number" name="age"></td>
+</tr>
+<tr>
+<td>Sexe</td>
+<td><input type="text" name="sexe" id="sexe" onkeypress="verifierCaracteressexe(event); return false;"></td>
+</tr>
+<tr>
+<td>Adresse</td>
+<td><input type="text" name="adresse"></td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td><input type="email" name="email" required=""></td>
+</tr>
+<tr>
+<td>Mot de passe</td>
+<td><input type="password" name="mdp" id="password"></td>
+</tr>
+<tr>
+<td>Confirmer mot de passe</td>
+<td><input type="password" name="mdp" id="password2"></td>
+</tr>
+<tr>
+<td>Fidelite</td>
+<td>
+	<input type="text" name="fidelite" id="fidelite" onkeypress="verifierCaracteresfidelite(event); return false;" ></td>
+</tr>
+<tr>
+<td></td>
+<td>
+	<button name="ajouter" onclick="verif()">ajouter</button>
+	<input type="submit" name="ajouter" value="ajouter"   ></td>
+</tr>
+</table>
+		<p>Already have an account? <a href="login.php">Login here</a>.</p>
+</form>
+<script type="text/javascript" src="clientcontrolesaisie.js"></script>
+</body>
+</HTMl>

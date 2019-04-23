@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+     <title>Casaluna &mdash; LOGIN </title>
+    
+    <link rel="icon" href="images/casa.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content=""/>
+  <meta property="og:image" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content=""/>
+  <meta property="og:description" content=""/>
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:url" content="" />
+  <meta name="twitter:card" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Icomoon Icon Fonts-->
+  <link rel="stylesheet" href="css/icomoon.css">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <!-- Flexslider  -->
+  <link rel="stylesheet" href="css/flexslider.css">
+
+  <!-- Theme style  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Modernizr JS -->
+  <script src="js/checkout.js"></script>  
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+    
+  </head>
+  <body onLoad="document.registration.userid.focus();">
+  
+   <div id="page">
+  <nav class="fh5co-nav" role="navigation">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="top-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-7 text-left menu-1">
+                <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+                  <li class="has-dropdown">
+                    <a href="blog.html">articles de décos</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Ambiance Chic</a></li>
+                      <li><a href="#">Ambiance Moderne</a></li>
+                      <li><a href="#"> Ambiance Contemporene</a></li>
+                      <li><a href="#">Ambiance Bohemiene</a></li>
+                    </ul>
+
+                  <li class="has-dropdown">
+                    <a href="about.html">accessoires</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Bracelets</a></li>
+                      <li><a href="#">Colier</a></li>
+                      <li><a href="#">Couronne</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <ul class="fh5co-social-icons">
+                  <li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+                    
+
+                       <li><a href="cart.html"><i class="icon-shopping-cart"></i></a></li>
+                      
+                    
+                  </li> 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+        
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center menu-2">
+          <div id="fh5co-logo">
+            <h1>
+              <a href="index.html">
+            
+            <img src="images/casa.png"  height="200" width="200">
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container">
+      <div class="row animate-box">
+        <div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+          <h2><span>Login</span></h2>
+        </div>
+      </div>
+
+    
+<form method="POST" action="acceuil.php" >
+
+<p><input id="unpt" placeholder="Nom " name="nom" type="text" required pattern="[A-Za-z].{2,}" x-moz-errormessage="Le nom doit avoir minimum 3 caracteres"> </p>
+<p><input id="unpt" placeholder="Prenom " name="prenom" type="text" required pattern="[A-Za-z].{2,}" x-moz-errormessage="Le prenom doit avoir minimum 3 caracteres"> </p>
+<p id="unpt">Sexe&nbsp;:
+    <INPUT type="radio" name="sexe" value="F" checked>F
+    <INPUT type="radio" name="sexe" value="M">M</p>
+
+<p><input id="unpt" placeholder="Cin " name="cin" type="number" required min="999999" max="9999999" x-moz-errormessage="Le N° CIN doit avoir minimum 8 caracteres" ></p>
+
+<p><input  id="unpt" placeholder="Email " name="email" type="email" required=""> </p>
+
+<p><input  id="da" placeholder="Date_Naissance " name="date_naissance" type="date" required="" max="<?php echo date('2000-04-06'); ?>" x-moz-errormessage="vous devez avoir 18 ans"  ></p>
+
+<p><input id="unpt" placeholder="Tel_Portable " name="tel_portable" type="number" required min="10000000" max="99999999" x-moz-errormessage="Le numero doit avoir minimum 8 caracteres"> </p>
+
+<p><input id="unpt" placeholder="Adresse " name="adresse" type="text" required pattern="[A-Za-z].{2,}"> </p>
+
+<p><input id="unpt" placeholder="Code_Postal " name="code_postal" type="number" required min="999" max="9999"> </p>
+
+ <p><input id="password1" placeholder="Mot de passe " name="password" type="Password" required  x-moz-errormessage="Le mot de passe doit avoir minimum 6 caracteres" pattern=".{6,}"> </p>
+
+ <p><input id="password2" placeholder="Confirmer mot de passe " name="passwordC" type="Password" required  pattern=".{6,}"> </p>
+
+<button type="submit" name="ajouter"  onclick="verif()" style="border-radius: 5px;" >Ajouter</button>
+
+
+
+
+
+
+
+</form>
+
+  
+
+
+    <footer class="site-footer border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="footer-heading mb-4"></h3>
+              </div>
+              
+             
+            </div>
+          </div>
+         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h3 class="footer-heading mb-4">Promo</h3>
+            <a href="#" class="block-6">
+              <img src="images/article/photo4.jpg" alt="Image placeholder" height="150" width="150"">
+              <h3 class="font-weight-light  mb-0">Dream Catcher </h3>
+              <p>Promotion d'hiver </p>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+             <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address"> 3, rue Slaheddine El Ayoubi Sidi Bou Saïd 2026</li>
+                <li class="phone"><a href="tel://23923929210">+216 24 545 134</a></li>
+                <li class="email">Casaluna.design@gmail.com</li>
+              </ul>
+            </div>
+
+
+          
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+          
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/checkout.js"></script>  
+  </body>
+</html>
