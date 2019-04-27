@@ -1,0 +1,95 @@
+<HTML>
+<head>
+</head>
+<body>
+<form method="POST" action="ajoutlivreur.php">
+<table>
+<caption>Ajouter livreur</caption>
+<tr>
+<td>Nom du livreur</td>
+<td><input type="text" name="nom" required pattern="[a-zA-Z-\.]{3,12}" placeholder="nom du livreur"></td>
+</tr>
+<tr>
+<td>Prenom du livreur</td>
+<td><input type="text" name="prenom" required pattern="[a-zA-Z-\.]{3,12}" placeholder="prenom du livreur"></td>
+</tr>
+<tr>
+<td>CIN</td>
+<td><input name="cin" type="number" required pattern="[0-9]" x-moz-errormessage="Le cin doix etre des chiffres" placeholder="cin"></td>
+</tr>
+<tr>
+<td>Numero d'assurence</td>
+<td><input name="numass" type="number" required pattern="[0-9]" x-moz-errormessage="+216" placeholder="Numero"></td>
+</tr>
+<tr>
+<td>Numero de telephone</td>
+<td><input name="num" type="number" required pattern="[0-9]" x-moz-errormessage="+216" placeholder="Numero"></td>
+</tr>
+<tr>
+<td>Numero d'urgence</td>
+<td><input name="numurg" type="number" required pattern="[0-9]" x-moz-errormessage="+216" placeholder="Numeroo"></td>
+</tr>
+
+<tr>
+<td>Adresse email</td>
+<td><input type="email" name="mail" required placeholder="mail@serveur.com"> </td>
+</tr>
+<tr>
+	<br>
+    <div>
+    <label for="pays">Region affectée au livreur: <span class="controls"></label> <br>
+                     
+<select class="controls" name="secteur">
+                    <option value="Tunis">Tunis</option>
+                    <option value="Bizerte">Bizerte</option>
+                    <option value="Nabeul">Nabeul</option>
+                    <option value="Ariana">Ariana</option>
+                    <option value="Béja">Béja</option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Gabès">Gabès</option>
+                    <option value="Jendouba">Jendouba</option>
+                    <option value="Kairouan">Kairouan</option>
+                    <option value="Kasserine">Kasserine</option>
+                    <option value="Kébila">Kébila</option>
+                    <option value="Le Kef">Le Kef</option>
+                    <option value="Mahdia">Mahdia</option>
+                    <option value="Manouba">Manouba</option>
+                    <option value="Médenine">Médenine</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Sidi Bouzid">Sidi Bouzid</option>
+                    <option value="Siliana">Siliana</option>
+                    <option value="Sousse">Sousse</option>
+                    <option value="Manouba">Manouba</option>
+                    <option value="Tataouine">Tataouine</option>
+                    <option value="Tozeur">Tozeur</option>
+                    <option value="Zaghouan">Zaghouan</option>
+                   </select>
+
+
+<br/>
+
+</div>
+<div>
+     <p>
+       <label >saisir la disponibilité du livreur</label><br />
+       <select name="disponibilite" id="disponibilite">
+           <option value="dispo">disponible </option>
+           <option value="nondispo">non disponible</option>
+       </select>
+   </p>
+   </div>
+
+    
+    <div>
+    <label class="control-label">nombre de livraison</label>
+    <input name="nombrelivraison" type="number" required pattern="[0-9]" x-moz-errormessage="+216" placeholder="nombre livraison">
+    </div>
+    <p>
+</div>
+<td></td>
+<td><input type="submit" name="ajouter" value="ajouter"></td>
+</tr>
+</table>
+</form>
+</body>
+</HTMl>
